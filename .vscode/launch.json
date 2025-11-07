@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:meta_advance_swift}/m1/swift-enumeration",
+            "name": "Debug swift-enumeration (m1/swift-enumeration)",
+            "target": "swift-enumeration",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug swift-enumeration (m1/swift-enumeration)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:meta_advance_swift}/m1/swift-enumeration",
+            "name": "Release swift-enumeration (m1/swift-enumeration)",
+            "target": "swift-enumeration",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release swift-enumeration (m1/swift-enumeration)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:meta_advance_swift}/m1/swift-associated-values",
+            "name": "Debug swift-associated-values (m1/swift-associated-values)",
+            "target": "swift-associated-values",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug swift-associated-values (m1/swift-associated-values)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:meta_advance_swift}/m1/swift-associated-values",
+            "name": "Release swift-associated-values (m1/swift-associated-values)",
+            "target": "swift-associated-values",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release swift-associated-values (m1/swift-associated-values)"
+        }
+    ]
+}
