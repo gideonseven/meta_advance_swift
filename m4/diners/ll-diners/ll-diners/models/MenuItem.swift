@@ -10,4 +10,7 @@ struct MenuItem: Identifiable {
     let id = UUID()
     let title: String
     let ingredients: [Ingredient]
+    let price: Double
+    let ordersCount: Int
+    let category : MenuCategory
 }

@@ -9,14 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-        
-            Text("Menu")
-                .font(.largeTitle)
-                .bold()
-            Text("Food")
-        }
-        .padding()
+        MenuItemsView()
     }
 }
 
