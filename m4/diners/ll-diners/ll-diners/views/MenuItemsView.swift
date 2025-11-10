@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MenuItemsView: View {
     
+    @StateObject private var viewModel = MenuViewViewModel()
     @State private var showFilterOptions = false
 
     let columns = [
@@ -27,7 +28,7 @@ struct MenuItemsView: View {
                         .bold()
                         .padding(.horizontal)
                     LazyVGrid(columns: columns, spacing: 15) {
-                        ForEach(foodMenuItems) {
+                        ForEach(viewModel.foods) {
                             item in
                             NavigationLink(destination: MenuItemDetailsView(item: item)){
                                 MenuItemCard(
@@ -45,7 +46,7 @@ struct MenuItemsView: View {
                         .bold()
                         .padding(.horizontal)
                     LazyVGrid(columns: columns, spacing: 15) {
-                        ForEach(drinkMenuItems) {
+                        ForEach(viewModel.drinks) {
                             item in
                             NavigationLink(destination: MenuItemDetailsView(item: item)){
                                 MenuItemCard(
@@ -63,7 +64,7 @@ struct MenuItemsView: View {
                         .bold()
                         .padding(.horizontal)
                     LazyVGrid(columns: columns, spacing: 15) {
-                        ForEach(dessertMenuItems) {
+                        ForEach(viewModel.desserts) {
                             item in
                             NavigationLink(destination: MenuItemDetailsView(item: item)){
                                 MenuItemCard(

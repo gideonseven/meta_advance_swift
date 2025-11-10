@@ -9,11 +9,11 @@ import SwiftUI
 
 struct MenuItemDetailsView: View {
     let item: MenuItem
-
+    
     var body: some View {
         
         let ingredientsText = item.ingredients.isEmpty ? "n/a" : item.ingredients.map{$0.rawValue}.joined(separator: ", ")
-
+        
         ScrollView {
             VStack(spacing: 20){
                 //add title
@@ -21,10 +21,11 @@ struct MenuItemDetailsView: View {
                     .font(.headline)
                 
                 // large image
-                Rectangle()
-                    .fill(Color.yellow)
-                    .frame(height: 300)
-                    .cornerRadius(12)
+                Image("ll-logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 100, height: 300)
+                    .cornerRadius(8)
                 
                 // second title
                 Text(item.title.uppercased())

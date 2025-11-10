@@ -6,11 +6,11 @@
 //
 import Foundation
 
-struct MenuItem: Identifiable {
+struct MenuItem: Identifiable, MenuItemProtocol {
     let id = UUID()
     let title: String
-    let ingredients: [Ingredient]
+    var ingredients: [Ingredient]
     let price: Double
-    let ordersCount: Int
+    var ordersCount: Int
     let category : MenuCategory
 }
